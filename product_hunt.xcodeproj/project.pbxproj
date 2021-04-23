@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		148EEC4626335F7400463D88 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148EEC4526335F7400463D88 /* PostTableViewCell.swift */; };
 		148F239426324A15007B17F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148F239326324A15007B17F8 /* AppDelegate.swift */; };
 		148F239626324A15007B17F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148F239526324A15007B17F8 /* SceneDelegate.swift */; };
 		148F239826324A15007B17F8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148F239726324A15007B17F8 /* FeedViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		148EEC4526335F7400463D88 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		148F239026324A15007B17F8 /* product_hunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = product_hunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		148F239326324A15007B17F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		148F239526324A15007B17F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		148EEC4826335F7B00463D88 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				148EEC4526335F7400463D88 /* PostTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		148F238726324A15007B17F8 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +73,7 @@
 				148F23AA26324D06007B17F8 /* Model */,
 				148F23A926324D01007B17F8 /* View */,
 				148F23A826324CF6007B17F8 /* Controller */,
+				148EEC4826335F7B00463D88 /* Cell */,
 				148F239C26324A16007B17F8 /* Assets.xcassets */,
 				148F239E26324A16007B17F8 /* LaunchScreen.storyboard */,
 				148F23A126324A16007B17F8 /* Info.plist */,
@@ -166,6 +177,7 @@
 			files = (
 				148F239826324A15007B17F8 /* FeedViewController.swift in Sources */,
 				148F239426324A15007B17F8 /* AppDelegate.swift in Sources */,
+				148EEC4626335F7400463D88 /* PostTableViewCell.swift in Sources */,
 				148F239626324A15007B17F8 /* SceneDelegate.swift in Sources */,
 				148F23AF26325C0F007B17F8 /* Post.swift in Sources */,
 			);
