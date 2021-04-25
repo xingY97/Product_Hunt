@@ -62,7 +62,6 @@
 		148F238726324A15007B17F8 = {
 			isa = PBXGroup;
 			children = (
-				1487B78D2635064000972DD7 /* Networking */,
 				148F239226324A15007B17F8 /* product_hunt */,
 				148F239126324A15007B17F8 /* Products */,
 			);
@@ -81,6 +80,7 @@
 			children = (
 				148F239326324A15007B17F8 /* AppDelegate.swift */,
 				148F239526324A15007B17F8 /* SceneDelegate.swift */,
+				1487B78D2635064000972DD7 /* Networking */,
 				148F23AA26324D06007B17F8 /* Model */,
 				148F23A926324D01007B17F8 /* View */,
 				148F23A826324CF6007B17F8 /* Controller */,
