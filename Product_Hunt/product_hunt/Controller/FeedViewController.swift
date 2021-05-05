@@ -17,20 +17,21 @@ class FeedViewController: UIViewController {
         
         feedTableView.dataSource = self
         feedTableView.delegate = self
+        updateFeed()
         
        
     }
     
-    func updateFeed(){
-        networkManager.getPosts { result in
-            self.posts = result
-        }
+    func updateFeed() {
+      // call our network manager's getPosts method to update our feed with posts
+       networkManager.getPosts() { result in
+           self.posts = result
+       }
     }
-    
     var posts: [Post] = [] {
-        didSet {
-            feedTableView.reloadData()
-        }
+       didSet {
+           feedTableView.reloadData()
+       }
     }
     
     var networkManager = NetworkManager()
