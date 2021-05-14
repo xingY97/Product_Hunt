@@ -23,9 +23,13 @@ class FeedViewController: UIViewController {
     }
     
     func updateFeed() {
-      // call our network manager's getPosts method to update our feed with posts
        networkManager.getPosts() { result in
-           self.posts = result
+           switch result {
+           case let .success(posts):
+             self.posts = posts
+           case let .failure(error):
+             print(error)
+           }
        }
     }
     var posts: [Post] = [] {
@@ -61,6 +65,7 @@ extension FeedViewController: UITableViewDataSource {
         //return UITableViewCell()
         return cell
     }
+    
     
 }
 

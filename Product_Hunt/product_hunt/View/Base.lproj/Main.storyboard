@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="-891" y="-171"/>
         </scene>
-        <!--Comments-->
+        <!--CommentsViewController-->
         <scene sceneID="2In-5R-I1b">
             <objects>
-                <viewController storyboardIdentifier="commentsView" id="jWp-tB-obd" userLabel="Comments" customClass="commentsView" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="commentsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jWp-tB-obd" userLabel="CommentsViewController" customClass="CommentsViewController" customModule="product_hunt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P75-F3-vfA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,7 +128,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="125" id="5fx-IQ-iU2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="125" id="5fx-IQ-iU2" customClass="CommentTableViewCell" customModule="product_hunt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5fx-IQ-iU2" id="N1R-oE-cG5">
@@ -151,6 +151,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="slI-qm-t8H" secondAttribute="trailing" constant="15" id="s4G-zV-o7H"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentTextView" destination="slI-qm-t8H" id="I0W-cK-8U8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -165,7 +168,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="commentTextView" destination="slI-qm-t8H" id="u1W-4C-gAh"/>
                         <outlet property="commentsTableView" destination="FuV-Ah-SDF" id="Kel-VN-2zN"/>
                     </connections>
                 </viewController>
